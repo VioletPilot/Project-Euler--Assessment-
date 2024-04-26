@@ -4,9 +4,8 @@ $(document).ready(function()
 {
 //Wait for document to completely render
 
-        const button_compute_q1 = document.querySelector("#test"/*'#compute-q1'*/);
+        const button_compute_q1 = document.querySelector('#compute-q1');
         button_compute_q1.addEventListener("click", function() {
-            // Call your function here
             multiples_under_max();
         });
 
