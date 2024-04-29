@@ -8,7 +8,20 @@ $(document).ready(function()
 	const card_answer_q1	= document.querySelector('#answer-q1');
 	button_compute_q1.addEventListener("click", function() 
 	{
-		multiples_under_max();
+		if ((document.querySelector("#first-mult").value!=='')||
+			(document.querySelector("#second-mult").value!=='')||
+			(document.querySelector("#max-mult").value!==''))
+			{
+				multiples_under_max();
+			}
+			else
+			{
+				if (document.querySelector("#first-mult").value==='')
+				{
+					$("#first-mult").addClass("animated shake");
+					window.alert("Please fill in all the inputs for this question!");
+				}
+			}
 	});
 
 	function multiples_under_max() 
