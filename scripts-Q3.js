@@ -4,10 +4,18 @@ $(document).ready(function()
 {
 	//Wait for document to completely render
 	const button_compute_q3 = document.querySelector('#compute-q3');
-	const card_answer_q3	= document.querySelector('#answer-q3');
-	button_compute_q3.addEventListener("click", function() 
+	const card_answer_q3 = document.querySelector('#answer-q3');
+	button_compute_q3.addEventListener("click",
+	function() 
 	{
-		largest_prime_factor();
+		if (document.querySelector("#max-prime").value !== '') 
+		{
+			largest_prime_factor();
+		} 
+		else
+		 {
+			window.alert("Please fill in all the inputs for this question!");
+		}
 	});
 
 	function largest_prime_factor() 
