@@ -8,15 +8,21 @@ $(document).ready(function()
 	button_compute_q2.addEventListener("click",
 	function() 
 	{
-		if ((document.querySelector("#fib-seq1").value !== '') || 
-			(document.querySelector("#fib-seq2").value !== '') || 
-			(document.querySelector("#max-fib").value !== '')) 
-		{
-			fib_even_sum();
-		} 
-		else 
+		if ((document.querySelector("#fib-seq1").value === '') || 
+			(document.querySelector("#fib-seq2").value === '') || 
+			(document.querySelector("#max-fib").value === '')) 
 		{
 			window.alert("Please fill in all the inputs for this question!");
+		} 
+		else if ((document.querySelector("#fib-seq1").value <0) || 
+				 (document.querySelector("#fib-seq2").value <0) || 
+				 (document.querySelector("#max-fib").value <0))
+		{
+			window.alert("Values must be greater than 0!");
+		}
+		else
+		{
+			fib_even_sum();
 		}
 	});
 

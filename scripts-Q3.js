@@ -8,13 +8,17 @@ $(document).ready(function()
 	button_compute_q3.addEventListener("click",
 	function() 
 	{
-		if (document.querySelector("#max-prime").value !== '') 
+		if (document.querySelector("#max-prime").value === '') 
 		{
-			largest_prime_factor();
-		} 
-		else
-		 {
 			window.alert("Please fill in the input for this question!");
+		} 
+		else if (document.querySelector("#max-prime").value <0)
+		{
+			window.alert("Value must be greater than 0!");
+		}
+		else
+		{
+			largest_prime_factor()
 		}
 	});
 
