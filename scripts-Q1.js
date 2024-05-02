@@ -28,16 +28,13 @@ $(document).ready(function()
 		const multiple2 = parseInt(document.querySelector("#second-mult").value);
 		const max = parseInt(document.querySelector("#max-mult").value);
 
-		var total = 0;
-
-		for (var i = 0; i < max; i++) 
+		const sumOfMultiples = (multiple, max) => 
 		{
-			if (((i % multiple1 === 0) || (i % multiple2 === 0))) 
-			{
-				total += i;
-			}
-		}
-		card_answer_q1.innerText = total;
+			const n = Math.floor((max - 1) / multiple);
+			return (multiple * n * (n + 1) / 2); //formula for sum of an arithmetic series
+		};
+	
+		card_answer_q1.innerText = sumOfMultiples(multiple1, max) + sumOfMultiples(multiple2, max) - sumOfMultiples(multiple1 * multiple2, max);
 		//function Finish
 	}
 	//End of document ready
