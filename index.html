@@ -19,8 +19,7 @@
 				</a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
 				data-bs-target="#nav-burger">
-					<span class="navbar-toggler-icon">
-					</span>
+					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="nav-burger">
 					<nav>
@@ -53,7 +52,7 @@
 		</header>
 		<main>
 			<div class="container-fluid">
-				<div class="tab-content m-2 p-5" id="nav-tabContent">
+				<div class="tab-content mx-3 p-5" id="nav-tabContent">
 					<!--Home-->
 					<div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"
 					tabindex="0">
@@ -92,17 +91,20 @@
 							<div class="card-footer justify-content-center">
 								<label for="first-mult" class="input-label">
 									1st Multiple:
-									<input type="number" id="first-mult" class="form-control input-field" required>
+									<input type="number" id="first-mult" value=3 
+									class="form-control input-field text-center border border-dark border-opacity-50" required>
 								</label>
 								<label for="second-mult" class="input-label">
 									2nd Multiple:
-									<input type="number" id="second-mult" class="form-control input-field" required>
+									<input type="number" id="second-mult" value=5 
+									class="form-control input-field text-center border border-dark border-opacity-50" required>
 								</label>
 								<br>
 								<br>
 								<label for="max-mult" class="input-label">
 									Number to find multiples under:
-									<input type="number" id="max-mult" class="form-control input-field" required>
+									<input type="number" id="max-mult" value=1000 
+									class="form-control input-field text-center border border-dark border-opacity-50" required>
 								</label>
 
 								<div class="card text-bg-secondary m-3" id="answer-q1">
@@ -141,17 +143,20 @@
 							<div class="card-footer">
 								<label for="fib-seq1" class="input-label">
 									1st Fibonacci number:
-									<input type="number" id="fib-seq1" class="form-control input-field" required>
+									<input type="number" id="fib-seq1" value=1 
+									class="form-control input-field text-center border border-dark border-opacity-50" required>
 								</label>
 								<label for="fib-seq2" class="input-label">
 									2nd Fibonacci number:
-									<input type="number" id="fib-seq2" class="form-control input-field" required>
+									<input type="number" id="fib-seq2" value=2 
+									class="form-control input-field text-center border border-dark border-opacity-50" required>
 								</label>
 								<br>
 								<br>
 								<label for="max-fib" class="input-label">
 									End of sequence:
-									<input type="number" id="max-fib" class="form-control input-field" required>
+									<input type="number" id="max-fib" value=4000000 
+									class="form-control input-field text-center border border-dark border-opacity-50" required>
 								</label>
 
 								<div class="card text-bg-secondary m-3" id="answer-q2">
@@ -183,7 +188,8 @@
 							<div class="card-footer">
 								<label for="max-prime" class="input-label">
 									Number to find largest prime factor for:
-									<input type="number" id="max-prime" class="form-control input-field" required>
+									<input type="number" id="max-prime" value=600851475143 
+									class="form-control input-field text-center border border-dark border-opacity-50" required>
 								</label>
 
 								<div class="card text-bg-secondary m-3" id="answer-q3">
@@ -208,7 +214,6 @@
 		<script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.6.3"></script>
 
     <!--Custom scripts to solve problems-->
-		<script src="scripts.js"></script>
 		<script src="scripts-Q1.js"></script>
 		<script src="scripts-Q2.js"></script>
 		<script src="scripts-Q3.js"></script>

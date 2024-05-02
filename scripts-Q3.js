@@ -14,7 +14,7 @@ $(document).ready(function()
 		} 
 		else
 		 {
-			window.alert("Please fill in all the inputs for this question!");
+			window.alert("Please fill in the input for this question!");
 		}
 	});
 
