@@ -41,7 +41,7 @@ $(document).ready(function()
 			fib1 = fib2;
 			fib2 = fib3;
 
-			if ((fib3 % 2) === 0) 
+			if (((fib3 % 2) === 0) && (fib3<max)) 
 			{
 				sum_even += fib3;
 			}
